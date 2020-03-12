@@ -21,27 +21,27 @@
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through differentiate reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for differentiate reaction, Blood pressure, Hospitals and Pharmacies"],
+         "responses": ["I can guide you through differentiate reaction list, integrate, integral", "Offering support for differentiate reaction, differentiate or integrate, integral"],
          "context": [""]
         },
         {"tag": "differentiate",
-         "patterns": ["How to check differentiate reaction?", "Open differentiates module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+         "patterns": ["How to check differentiate reaction?", "Open differentiates module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for user with adverse reaction", "Which drugs dont have adverse reaction?" ],
          "responses": ["Navigating to differentiate reaction module"],
          "context": [""]
         },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
+        {"tag": "math",
+         "patterns": ["Open differentiate or integrate module", "Task related to differentiate or integrate", "differentiate or integrate data entry", "I want to log differentiate or integrate results", "differentiate or integrate data management" ],
+         "responses": ["Navigating to differentiate or integrate module"],
          "context": [""]
         },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
+        {"tag": "math_search",
+         "patterns": ["I want to search for differentiate or integrate result history", "differentiate or integrate for user", "Load user differentiate or integrate result", "Show differentiate or integrate results for user", "Find differentiate or integrate results by ID" ],
+         "responses": ["Please provide user ID", "user ID?"],
+         "context": ["search_request_by_user_id"]
         },
-        {"tag": "search_blood_pressure_by_patient_id",
+        {"tag": "search_request_by_user_id",
          "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient"],
+         "responses": ["Loading differentiate or integrate result for user"],
          "context": [""]
         },
         {"tag": "pharmacy_search",
@@ -54,19 +54,19 @@
          "responses": ["Loading pharmacy details"],
          "context": [""]
         },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
+        {"tag": "step-by-step_search",
+         "patterns": ["Lookup for step-by-step", "Searching for step-by-step to transfer user", "I want to search step-by-step data", "step-by-step lookup for user", "Looking up step-by-step details" ],
+         "responses": ["Please provide step-by-step name or location"],
+         "context": ["search_step-by-step_by_params"]
         },
-        {"tag": "search_hospital_by_params",
+        {"tag": "search_step-by-step_by_params",
          "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
+         "responses": ["Please provide step-by-step type"],
+         "context": ["search_step-by-step_by_type"]
         },
-        {"tag": "search_hospital_by_type",
+        {"tag": "search_step-by-step_by_type",
          "patterns": [],
-         "responses": ["Loading hospital details"],
+         "responses": ["Loading step-by-step details"],
          "context": [""]
         }
    ]
